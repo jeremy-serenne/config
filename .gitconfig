@@ -1,0 +1,29 @@
+[user]
+	email           = jeremy.serenne@gensdeconfiance.com
+	name            = Jérémy Serenne
+
+[github]
+    user            = jeremy-serenne
+
+[alias]
+    st              = status
+    co              = checkout
+    lg              = log --graph --pretty=tformat:'%Cred%h%Creset -%C(cyan)%d %Creset%s %Cgreen(%an %cr)%Creset' --abbrev-commit --date=relative
+    logfull         = log --pretty=fuller --graph --stat -p
+    unstage         = reset HEAD
+    uncommit        = update-ref HEAD HEAD^
+    uncommithard    = reset --hard HEAD^
+    undomerge       = reset --hard ORIG_HEAD
+    oups            = commit --amend -C HEAD
+    cancel          = reset --soft HEAD~
+    sync            = pull --rebase --autostash
+
+[color]
+    ui              = always
+    branch          = auto
+    diff            = auto
+    status          = auto
+    interactive     = auto
+
+[push]
+    default         = current
