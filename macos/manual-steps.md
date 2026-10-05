@@ -12,7 +12,7 @@
 - Dans xbar : Refresh all. Vérifier visuellement ✅, 🍊 ou 🚨 et ouvrir une PR s'il y en a. Les filtres conservent le comportement du script d'origine : PR ouvertes, review demandée à l'utilisateur connecté, hors drafts et `review:none`.
 - Configurer la connexion/provider dans CodexBar.
 - Ouvrir Docker et terminer sa configuration. Vérifier `docker info` une fois démarré.
-- Agenda : app ou extension encore non identifiée. Ne pas installer un équivalent supposé. Retrouver son nom, sa source et ses réglages, puis compléter ce document et le manifeste. Aucun agenda/calendrier ni compte n'a été exporté.
+- Agenda : utilisé dans Raycast, déjà inclus dans le Brewfile essentiel. Sur le nouveau Mac, restaurer les réglages Raycast, reconnecter les comptes calendrier nécessaires et accorder les autorisations demandées. Vérifier que l'agenda affiche les événements attendus. Les comptes, calendriers sélectionnés et raccourcis restent à récupérer ; aucune donnée de calendrier n'est versionnée.
 
 ## Réglages et exports à récupérer sur l'ancien Mac
 
@@ -35,4 +35,4 @@
 
 `verify.sh` contrôle installation, configs et accès PR. Il ne prouve pas que les apps sont connectées, qu'un calendrier s'affiche, qu'un VPN fonctionne ou qu'un projet démarre.
 
-Avant de conclure : vérifier visuellement les apps de barre de menu, accéder à GitHub et aux outils de travail, puis lancer au moins un projet utile avec ses dépendances. Signaler explicitement les étapes manquantes, notamment l'agenda et les exports non capturés.
+Avant de conclure : vérifier visuellement les apps de barre de menu et l'agenda Raycast, accéder à GitHub et aux outils de travail, puis lancer au moins un projet utile avec ses dépendances. Signaler explicitement les étapes manquantes, notamment les réglages et exports non capturés.

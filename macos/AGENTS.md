@@ -7,7 +7,7 @@ Charger ce document pour installer ou maintenir le setup macOS. Ne pas exécuter
 3. Vérifier Homebrew dans `/opt/homebrew/bin/brew` ou `/usr/local/bin/brew`. Si absent, suivre la procédure officielle https://brew.sh ; laisser l'utilisateur saisir lui-même les demandes de mot de passe.
 4. Exécuter `bash macos/bootstrap.sh`. Résoudre chaque conflit affiché en comparant les fichiers ; ne pas remplacer une config sans examiner les différences.
 5. Guider la connexion à GitHub avec `gh auth login`, puis le reste des étapes humaines. Ne pas afficher de token ni copier les credentials dans le dépôt.
-6. Exécuter `bash macos/verify.sh`. Traiter les échecs. Ouvrir xbar et vérifier visuellement son menu PR, Raycast et les autres apps utiles. Une sortie de script valide ne prouve pas un affichage dans la barre.
+6. Exécuter `bash macos/verify.sh`. Traiter les échecs. Ouvrir xbar et vérifier visuellement son menu PR, l'agenda dans Raycast et les autres apps utiles. Une sortie de script valide ne prouve pas un affichage dans la barre.
 7. Installer ensuite les extras avec `bash macos/bootstrap.sh --extras`, puis `bash macos/verify.sh --extras`. Les gros logiciels et accès professionnels sont décrits dans manual-steps.md.
 8. Rapporter ce qui fonctionne, les conflits et les étapes encore non réalisées. Ne pas déclarer le Mac opérationnel sur le seul résultat du bootstrap : valider les accès et au moins un projet réel.
 
