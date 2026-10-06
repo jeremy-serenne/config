@@ -16,7 +16,7 @@ Les réglages filtrés sont disponibles dans [config-private](https://github.com
 gh repo clone jeremy-serenne/config-private ~/config-private
 ```
 
-Chemin de la capture actuelle : `~/config-private/macos/2026-10-06/snapshot/`. L'export Raycast chiffré reste à ajouter au dépôt privé. Aucun mot de passe de cet export ne doit entrer dans Git.
+Chemin de la capture actuelle : `~/config-private/macos/2026-10-06/snapshot/`. L'export Raycast est disponible dans `~/config-private/macos/2026-10-06/raycast/settings.rayconfig`. Son mot de passe est enregistré dans le même dossier du dépôt privé à la demande explicite de l'utilisateur ; ne pas l'afficher ni le publier dans ce dépôt public.
 
 Copie locale initiale : `~/Documents/Mac-setup-backup/2026-10-06/`. Une copie locale seule ne protège pas de la perte de la machine ; le dépôt privé contient désormais la capture filtrée indépendante.
 
@@ -30,7 +30,7 @@ La capture `snapshot/` contient :
 
 Les sessions, clés privées, credentials, licences, historiques et bases de données ne sont pas sauvegardés. Les fichiers contenant un secret détecté sont exclus ; les lignes de shell correspondantes sont omises. Ce filtre n'est pas un audit de sécurité exhaustif : conserver tout le dossier en privé, ne jamais le committer.
 
-Raycast utilise séparément son export natif chiffré `.rayconfig`. Inclure Settings, Extensions, Quicklinks, catégories Focus, Script Directories et Snippets ; exclure Clipboard History, AI Chats et Notes pour une sauvegarde du setup. Ne pas recopier sa base SQLite chiffrée : l'export natif est le format de transfert. Conserver le mot de passe de l'export dans Bitwarden, séparément du fichier.
+Raycast utilise séparément son export natif chiffré `.rayconfig`. Inclure Settings, Extensions, Quicklinks, catégories Focus, Script Directories et Snippets ; exclure Clipboard History, AI Chats et Notes pour une sauvegarde du setup. Ne pas recopier sa base SQLite chiffrée : l'export natif est le format de transfert. Pour cette capture, le mot de passe fourni par l'utilisateur est dans `raycast/export-password.txt` du dépôt privé ; il n'a pas été vérifié par import.
 
 ## Ordre de restauration pour l'agent
 
