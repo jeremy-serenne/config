@@ -16,11 +16,12 @@
 
 ## Réglages et exports à récupérer sur l'ancien Mac
 
-- Raycast : exporter les réglages via l'interface. Conserver l'export dans un stockage privé après vérification ; ne pas publier un export contenant des données personnelles. Sur le nouveau Mac, importer puis reconnecter les extensions.
-- Firefox : activer la synchronisation souhaitée. JetBrains : utiliser Settings Sync ou un export privé pour raccourcis, plugins et paramètres.
-- Clipy : configurer les raccourcis ; ne pas transférer l'historique du presse-papiers.
-- Codex : récupérer séparément les skills personnels nécessaires et reconnecter les plugins/MCP. Ne pas copier les sessions, les fichiers d'authentification ou la mémoire dans le repo public. Ce dépôt ne sauvegarde pas ces skills.
-- Les raccourcis/macOS defaults et exports d'apps ne sont pas encore capturés. Les configs Git, aliases zsh, thème robbyrussell et plugin git sont enregistrés.
+- Suivre [restore.md](restore.md) pour le contenu capturé et l'ordre exact de restauration. La sauvegarde privée doit être transférée hors de l'ancien Mac.
+- Raycast : exporter les réglages via l'interface dans un `.rayconfig` privé chiffré. Sur le nouveau Mac, importer puis reconnecter les extensions. Agenda : commande My Schedule de Calendar.
+- Firefox : activer la synchronisation souhaitée. JetBrains : reprendre les keymaps/options privées capturées ou utiliser Settings Sync, puis réinstaller les plugins.
+- Clipy : les raccourcis sont capturés dans les préférences sélectionnées ; aucun historique du presse-papiers n'est transféré.
+- Codex : les skills personnels sont dans la sauvegarde privée. Réinstaller les plugins et reconnecter les MCP selon l'inventaire privé ; aucune session, mémoire ni authentification n'est copiée.
+- Terminal, Dock, Clipy et CodexBar : préférences sélectionnées dans `configs/preferences`. Les permissions macOS et les comptes restent à rétablir humainement.
 
 ## Développement et logiciels plus lourds
 

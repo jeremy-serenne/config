@@ -2,7 +2,7 @@
 
 Charger ce document pour installer ou maintenir le setup macOS. Ne pas exécuter un bootstrap sur une autre plateforme.
 
-1. Lire le README racine et [manual-steps.md](manual-steps.md). Inventorier les fichiers existants et les apps ; le bootstrap est adapté à un nouveau Mac, pas à la migration silencieuse de configs existantes.
+1. Lire le README racine, [restore.md](restore.md) et [manual-steps.md](manual-steps.md). Chercher la sauvegarde privée avant installation et suivre son ordre de restauration. Inventorier les fichiers existants et les apps ; le bootstrap est adapté à un nouveau Mac, pas à la migration silencieuse de configs existantes.
 2. Vérifier `xcode-select -p`. Si absent, lancer `xcode-select --install` et laisser l'utilisateur terminer la fenêtre macOS avant de continuer.
 3. Vérifier Homebrew dans `/opt/homebrew/bin/brew` ou `/usr/local/bin/brew`. Si absent, suivre la procédure officielle https://brew.sh ; laisser l'utilisateur saisir lui-même les demandes de mot de passe.
 4. Exécuter `bash macos/bootstrap.sh`. Résoudre chaque conflit affiché en comparant les fichiers ; ne pas remplacer une config sans examiner les différences.

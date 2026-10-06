@@ -4,3 +4,7 @@ __pycache__/
 .env
 .env.*
 *.local
+*.rayconfig
+*.zip
+snapshot/
+Mac-setup-backup/

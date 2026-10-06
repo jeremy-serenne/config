@@ -36,6 +36,7 @@ L'installation conserve les fichiers existants différents et signale les confli
 - Apps et outils : [Brewfile](macos/Brewfile), [extras](macos/Brewfile.extras).
 - Git, shell zsh et plugin xbar de reviews GitHub.
 - Connexions, démarrage automatique, agenda, exports d'apps et projets : [étapes manuelles](macos/manual-steps.md).
+- Réglages capturés et sauvegarde privée : [procédure de restauration](macos/restore.md). À transférer hors de l'ancien Mac avant de le remplacer.
 
 Inventaire initial : 5 octobre 2026. Les manifestes décrivent les logiciels à installer, pas des versions figées ni une sauvegarde complète du Mac.
 
