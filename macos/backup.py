@@ -67,7 +67,7 @@ def capture(home, backup):
         if not source.is_file() or source.is_symlink():
             continue
         relative = source.relative_to(home)
-        if source.name.startswith('.env') or source.suffix in ('.pem', '.key', '.p12') or re.search(r'(?i)(auth|credential|password|license|datasource|recent|workspace|statistics|usage|account|github|ssh|http)', source.name):
+        if any(part.lower() == 'datasources' for part in relative.parts) or source.name.startswith('.env') or source.suffix in ('.pem', '.key', '.p12') or re.search(r'(?i)(auth|credential|password|license|datasource|recent|workspace|statistics|usage|account|github|ssh|http)', source.name):
             skipped.append(str(relative)); continue
         try:
             content = source.read_text()

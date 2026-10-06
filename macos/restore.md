@@ -10,7 +10,15 @@
 
 ## Sauvegarde privée
 
-Capture initiale locale : `~/Documents/Mac-setup-backup/2026-10-06/`. Copier ce dossier vers un stockage privé indépendant avant de changer de Mac. Une copie locale seule ne protège pas de la perte de la machine.
+Les réglages filtrés sont disponibles dans [config-private](https://github.com/jeremy-serenne/config-private), dépôt GitHub privé. Sur le nouveau Mac, installer `git`, `gh` et Python 3.11+ via Homebrew, se connecter avec `gh auth login --hostname github.com`, puis cloner :
+
+```sh
+gh repo clone jeremy-serenne/config-private ~/config-private
+```
+
+Chemin de la capture actuelle : `~/config-private/macos/2026-10-06/snapshot/`. L'export Raycast chiffré reste à ajouter au dépôt privé. Aucun mot de passe de cet export ne doit entrer dans Git.
+
+Copie locale initiale : `~/Documents/Mac-setup-backup/2026-10-06/`. Une copie locale seule ne protège pas de la perte de la machine ; le dépôt privé contient désormais la capture filtrée indépendante.
 
 La capture `snapshot/` contient :
 

@@ -13,7 +13,7 @@ Objectif : retrouver rapidement un Mac opérationnel, avec l'aide d'un agent.
 
 3. Ouvrir ce dossier dans Codex et demander :
 
-   > Configure ce Mac en suivant AGENTS.md. Installe d'abord le setup essentiel, vérifie-le et guide-moi pour les étapes humaines restantes. Puis installe les apps supplémentaires.
+   > Configure ce Mac en suivant AGENTS.md. Récupère aussi mon dépôt privé jeremy-serenne/config-private pour restaurer mes réglages personnels. Installe d'abord le setup essentiel, vérifie-le et guide-moi pour les étapes humaines restantes. Puis installe les apps supplémentaires.
 
 L'agent suit [la procédure macOS](macos/AGENTS.md). Linux n'est pas encore pris en charge.
 
@@ -36,7 +36,7 @@ L'installation conserve les fichiers existants différents et signale les confli
 - Apps et outils : [Brewfile](macos/Brewfile), [extras](macos/Brewfile.extras).
 - Git, shell zsh et plugin xbar de reviews GitHub.
 - Connexions, démarrage automatique, agenda, exports d'apps et projets : [étapes manuelles](macos/manual-steps.md).
-- Réglages capturés et sauvegarde privée : [procédure de restauration](macos/restore.md). À transférer hors de l'ancien Mac avant de le remplacer.
+- Réglages capturés : [procédure de restauration](macos/restore.md) et [sauvegarde privée](https://github.com/jeremy-serenne/config-private). Le dépôt privé nécessite une connexion GitHub.
 
 Inventaire initial : 5 octobre 2026. Les manifestes décrivent les logiciels à installer, pas des versions figées ni une sauvegarde complète du Mac.
 
